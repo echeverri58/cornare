@@ -1,5 +1,6 @@
 def descargar_pdf(url):
     # Realizamos la petición a la página web
+    import requests
     r = requests.get(url) 
     soup = BeautifulSoup(r.content, "html.parser")
     dom = etree.HTML(str(soup))
