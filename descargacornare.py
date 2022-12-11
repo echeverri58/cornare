@@ -1,5 +1,6 @@
 def descargar_pdf(url):
     # Realizamos la petición a la página web
+    !pip install requests
     import requests
     r = requests.get(url) 
     soup = BeautifulSoup(r.content, "html.parser")
