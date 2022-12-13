@@ -1,3 +1,4 @@
+!pip install beautifulsoup4
 def descargar_pdf(url):
     import requests # Agregamos la importación de requests aquí
     # Realizamos la petición a la página web
